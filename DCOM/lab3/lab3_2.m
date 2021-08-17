@@ -1,6 +1,4 @@
 clc;
-close all;
-clear all;
 
 %Probabilty of Inputs
 PX=zeros(1,2);

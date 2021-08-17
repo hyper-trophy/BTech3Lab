@@ -1,6 +1,4 @@
 clc;
-close all;
-clear all;
 
 %error probability vector
 p1 = 0.001:0.001:1;
