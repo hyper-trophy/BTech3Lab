@@ -5,7 +5,6 @@ echo "Enter 2 for getting Calender"
 echo "Enter 3 for todays date"
 read -p "Enter your choice: " choice
 
-# switch case on OP
 case $choice in
     "1")
         w
