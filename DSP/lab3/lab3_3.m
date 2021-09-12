@@ -12,13 +12,13 @@ disp(h);
 y=zeros(1, N);
 for n=1:N
     for m=1:N
-        z=mod ( n-m, N) ;
+        z=mod( n-m, N);
         y(n)=y(n)+x(m)*h(z+1) ;
     end
 end
 
-disp('Convolution without inbuild functions is' );
+disp('Circular Convolution without inbuild functions is' );
 disp(y);
 z=cconv(x, h, N);
-disp('Convolution with inbuild functions is');
+disp('Circular Convolution with inbuild functions is');
 disp(z)

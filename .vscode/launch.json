@@ -4,7 +4,34 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "Launch crc",
+            "request": "launch",
+            "mainClass": "CN.lab3.crc",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch cksum",
+            "request": "launch",
+            "mainClass": "CN.lab3.cksum",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch tdpc",
+            "request": "launch",
+            "mainClass": "CN.lab3.tdpc",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch SPC",
+            "request": "launch",
+            "mainClass": "CN.lab3.SPC",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
         {
             "type": "OctaveDebugger",
             "request": "launch",
