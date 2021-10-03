@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SRTF",
+            "request": "launch",
+            "mainClass": "SRTF",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch SJF",
+            "request": "launch",
+            "mainClass": "SJF",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
             "name": "Launch spc",
             "request": "launch",
             "mainClass": "CN.lab3.spc",

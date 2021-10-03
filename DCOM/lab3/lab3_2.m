@@ -2,11 +2,11 @@ clc;
 
 %Probabilty of Inputs
 PX=zeros(1,2);
-PX(1)=input('Enter probabilty for input x1');
+PX(1)=input('Enter probabilty for input x1 : ');
 PX(2)=1-PX(1);
 
 %Error probabilty
-p=input('Enter error probability');
+p=input('Enter error probability : ');
 
 %Channel Matrix
 PC=[1-p p;p 1-p];

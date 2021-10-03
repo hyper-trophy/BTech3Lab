@@ -9,7 +9,7 @@ for i=1:length(p1)
     Ci(i)=1+p1(i)*log2(p1(i))+(1-p1(i))*log2(1-p1(i));
 end
 
-% plotting channel capacity vs erro probabilty 
+% plotting channel capacity vs error probabilty 
 plot(p1,Ci);
 grid on;
 title('Channel Capacity vs Error Probability');
