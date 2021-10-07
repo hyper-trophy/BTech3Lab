@@ -4,8 +4,8 @@
 
 
 % symbols and corresponding probability
-letters=['a', 'b', 'c', 'd', 'e', 'f'];
-probabilities = [0.3, 0.25, 0.20, 0.12, 0.08, 0.05];
+letters=['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8'];
+probabilities = [0.5, 0.15, 0.15, 0.08, 0.08, 0.02, 0.01, 0.01];
 
 % empty cells to store the generated code
 resultCode=cell(1,length(probabilities));

@@ -1,10 +1,14 @@
-[h, g, n, k] = hammgen(3);
-G = [1 0 0 0 1 1 0; 0 1 0 0 0 1 1; 0 0 1 0 1 0 1; 0 0 0 1 1 1 1];
-d = [0 1 0 1];
-c = d*G
+clc; clear all; 
+%% Hamming Coding
+data=input('Enter data bits : ') 
+k = length(data) ; % no. of information symbols
+n = 2^3 - 1 ; % codeword length
+p = n - k ; % no.of parity bits
+disp('parity check matrix');
+H = hammgen(p) % parity check matrix
+parity = H(1:p,p+1:n); 
+disp('generator matrix');
+G = [eye(k),parity'] % generator matrix
+c = data * G ; % codeword
+disp('codeword');
 c = mod(c,2)
-% [h, g, n, k] = hammgen(3);
-% G = [eye(4) g(1:4, 1:3)]
-% d = [0 1 0 1];
-% c = d*G
-% c = mod(c,2)
