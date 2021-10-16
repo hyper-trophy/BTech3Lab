@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch worstFit",
+            "request": "launch",
+            "mainClass": "OS.lab6.worstFit",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch bestFit",
+            "request": "launch",
+            "mainClass": "OS.lab6.bestFit",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch firstFit",
+            "request": "launch",
+            "mainClass": "OS.lab6.firstFit",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch hamming",
+            "request": "launch",
+            "mainClass": "CN.lab4.hamming",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
             "name": "Launch SRTF",
             "request": "launch",
             "mainClass": "SRTF",
