@@ -3,10 +3,8 @@ package CN.lab4;
 public class hamming {
 
     static void print(int arr[]) {
-        int skipFirst = 1;
-        for (int e : arr) {
-            if(skipFirst-- == 1)    continue;
-            System.out.print(e + " ");
+        for (int i=arr.length-1; i>0; i--) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
     }
@@ -28,9 +26,9 @@ public class hamming {
 
     static int[] getDataParityArray(String str, int M, int r) {
         int[] ar = new int[r + M + 1];
-        int j = 0;
+        int j = M;
         for (int i = 1; i < ar.length; i++) {
-            ar[i] = isParityBit(i) ? 0 : (int) (str.charAt(j++) - '0');
+            ar[i] = isParityBit(i) ? 0 : (int) (str.charAt(--j) - '0');
         }
         return ar;
     }
@@ -57,7 +55,7 @@ public class hamming {
 
     public static void main(String[] args) {
         // input message
-        String str = "0101";
+        String str = "1001101";
         System.out.println("Generated hamming code ");
         int[] ar = hammingGenerator(str);
         print(ar);

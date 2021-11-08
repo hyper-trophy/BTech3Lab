@@ -4,27 +4,27 @@ function op = plotters( bits, amp )
     
     subplot(6, 1, 1)
     plot(t, amp.*unipolarNRZ(bits));
-    title('Unipolar NRZ');
+    title(['Unipolar NRZ for bits : ' num2str(bits)]);
     
     subplot(6, 1, 2)
     plot(t, amp.*unipolarRZ(bits));
-    title('Unipolar RZ');
+    title(['Unipolar RZ for bits : ' num2str(bits)]);
     
     subplot(6, 1, 3)
     plot(t, amp.*polarNRZ(bits));
-    title('Polar NRZ');
+    title(['Polar NRZ for bits : ' num2str(bits)]);
     
     subplot(6, 1, 4)
     plot(t, amp.*polarRZ(bits));
-    title('Polar RZ');
+    title(['Polar RZ for bits : ' num2str(bits)]);
     
     subplot(6, 1, 5)
     plot(t, amp.*AMI(bits));
-    title('AMI');
+    title(['AMI for bits : ' num2str(bits)]);
     
     subplot(6, 1, 6)
     plot(t, amp.*manchester(bits));
-    title('Manchester');
+    title(['Manchester for bits : ' num2str(bits)]);
 end
 
 function op = unipolarNRZ( bits )

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LRU",
+            "request": "launch",
+            "mainClass": "OS.lab7.LRU",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
             "name": "Launch worstFit",
             "request": "launch",
             "mainClass": "OS.lab6.worstFit",
