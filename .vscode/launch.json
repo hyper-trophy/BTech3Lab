@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch scan",
+            "request": "launch",
+            "mainClass": "OS.lab9.scan",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
+            "name": "Launch semaphore",
+            "request": "launch",
+            "mainClass": "OS.lab8.semaphore",
+            "projectName": "BtechIIILab_2fc8c563"
+        },
+        {
+            "type": "java",
             "name": "Launch LRU",
             "request": "launch",
             "mainClass": "OS.lab7.LRU",
