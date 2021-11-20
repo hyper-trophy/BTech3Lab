@@ -30,7 +30,7 @@ hw = freqz(num,den,w);
 
 %% Plotting Magnitude Response
 subplot(2,1,1)
-plot(w/pi,abs(hw));
+plot(w/pi,20*log10(abs(hw)));
 grid on;
 title('Magnitude response of chebyshev using bilinear');
 ylabel('Magnitude');

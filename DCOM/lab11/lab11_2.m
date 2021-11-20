@@ -7,5 +7,5 @@ semilogy (S_nr,B_er);
 hold on
 grid on
 xlabel('SNR dB')
-vlabel('BER')
+ylabel('BER')
 title('BER VS SNR')
